@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MorielMyApplication3</string>
+
+    <string name="welcome_message">ברוכים הבאים!</string>
+    <string name="click_here">לחץ כאן</string>
+    <string name="my_message">
+    האפליקציה הראשונה שלי
+</string>
+</resources>
