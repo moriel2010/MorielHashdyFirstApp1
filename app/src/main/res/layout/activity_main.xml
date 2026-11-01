@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:padding="16dp">
 
     <TextView
@@ -24,19 +24,34 @@
         android:text="@string/click_here"
         android:textColor="#000000" />
 
+
+    <ImageView
+        android:id="@+id/btn_img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/img"/>
+
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/my_message"
-        android:textSize="24sp" />
+        android:textColor="#0560C8"
+        android:textSize="24sp"
 
-    <Button
-        android:id="@+id/btn_click_me"
+        />
+
+    <ImageView
+        android:id="@+id/btn_img1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/click_here" />
+        android:src="@drawable/img1"/>
 
+    <!-- פטריק גיין הוא דמות להשראה כי הוא מראה איך אפשר להשתמש בשכל, ברוגע ובחשיבה מחוץ לקופסה כדי להתגבר על המשברים הכי קשים. למרות שהוא עבר טרגדיה נוראית כשאשתו ובתו נרצחו, הוא לא הרים ידיים, אלא לקח את כל הכאב הזה ובחר לעזור לאנשים ולחפש צדק. הכוח הכי גדול שלו הוא שהוא לא צריך שרירים או כלי נשק – הוא פשוט מקשיב, שם לב לפרטים הקטנים שאף אחד אחר לא רואה, ויודע לקרוא אנשים בצורה מטורפת. הוא תמיד שומר על קור רוח וחיוך גם במצבים הכי מלחיצים, ודווקא בגלל שהוא משלב בין שכל חריף ללב ענק וחמלה, הוא דוגמה מושלמת למישהו שמצליח לצמוח מחדש מהמקום הכי נמוך.
+    -->
 
 </LinearLayout>
+
+
+
+

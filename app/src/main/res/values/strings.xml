@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">MorielMyApplication3</string>
 
-    <string name="welcome_message">ברוכים הבאים!</string>
+    <string name="welcome_message">פטריק גיין</string>
     <string name="click_here">לחץ כאן</string>
-    <string name="my_message">
-    האפליקציה הראשונה שלי
+    <string name="my_message">פטריק גיין הוא דמות מסדרה שמביא לי המון השראה. בסדרה הוא לא מדבר הרבה הוא חושב ולא מנסה להוכיח שהוא צודק ולבסוף כולם רואים שהוא צודק.
 </string>
 </resources>
