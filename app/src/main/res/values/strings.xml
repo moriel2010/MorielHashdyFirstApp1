@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">MorielMyApplication3</string>
 
-    <string name="welcome_message">ישראל</string>
-    <string name="click_here">לחץ כאן</string>
-    <string name="my_message">להיות ישראלי עבורי זה להרגיש שייך למדינה שלי, לאהוב את הארץ ולהיות גאה בה. ישראל מסמלת עבורי אחדות, חופש, אומץ ועזרה הדדית. אני חושב שמה שמיוחד בישראל הוא האנשים שתמיד מוכנים לעזור אחד לשני, במיוחד ברגעים קשים. ישראל היא מדינה עם היסטוריה, תרבות ונופים מיוחדים, ואני גאה להיות חלק ממנה. 🇮🇱
-</string>
+    <string name="user_name">ישראל ישראלי</string>
+    <string name="send_message">שלח הודעה</string>
+    <string name="follow">עקוב</string>
+    <string name="following">במעקב</string>
+    <string name="opening_chat">פותח צ\'אט...</string>
+    <string name="started_following">התחלת לעקוב!</string>
+
 </resources>

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -19,17 +20,22 @@ public class MainActivity extends AppCompatActivity implements
         View.OnClickListener,
         CompoundButton.OnCheckedChangeListener {
 
-    Button button2;
+     TextView tvUserName;
+     Button btnSendMessage;
+     Button btnFollow;
     CompoundButton mySwitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
 
-        button2 = findViewById(R.id.button2);
-        button2.setOnClickListener(this);
+        tvUserName = findViewById(R.id.tvUserName);
+        btnSendMessage = findViewById(R.id.btnSendMessage);
+        btnFollow = findViewById(R.id.btnFollow);
+
+        btnSendMessage.setOnClickListener(this);
+        btnFollow.setOnClickListener(this);
 
 
         // חיבור המתג
@@ -37,20 +43,23 @@ public class MainActivity extends AppCompatActivity implements
         mySwitch.setOnCheckedChangeListener(this);
         mySwitch.setChecked(false);
 
-        button2.setVisibility(View.GONE);
+        btnSendMessage.setVisibility(View.GONE);
+        btnFollow.setVisibility(View.GONE);
+
+
     }
 
     @Override
     public void onClick(View view) {
-
         int id = view.getId();
 
-        if (id == R.id.button2) {
-            Log.d("Noam", "clicked");
-            Toast.makeText(this, "Noam", Toast.LENGTH_SHORT).show();
+        if (id == R.id.btnSendMessage) {
+            Toast.makeText(this, R.string.opening_chat, Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.btnFollow) {
+            Toast.makeText(this, R.string.started_following, Toast.LENGTH_SHORT).show();
+            btnFollow.setText(R.string.following);
         }
     }
-
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
 
@@ -70,11 +79,17 @@ public class MainActivity extends AppCompatActivity implements
     public void onCheckedChanged(@NonNull CompoundButton compoundButton, boolean b) {
 
         if (b) {
-            button2.setVisibility(VISIBLE);
+            btnSendMessage.setVisibility(VISIBLE);
+            btnFollow.setVisibility(VISIBLE);
+
+
 
             Toast.makeText(this, "true", Toast.LENGTH_SHORT).show();
         } else {
-            button2.setVisibility(INVISIBLE);
+            btnSendMessage.setVisibility(INVISIBLE);
+            btnFollow.setVisibility(INVISIBLE);
+
+
 
             Toast.makeText(this, "false", Toast.LENGTH_SHORT).show();
         }
