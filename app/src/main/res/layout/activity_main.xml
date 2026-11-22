@@ -23,14 +23,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <EditText
+        android:id="@+id/etGuess"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="424dp"
+        android:gravity="center"
+        android:hint="הכנס ניחוש..."
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
     <ImageView
-        android:id="@+id/btn_img"
+        android:id="@+id/btn_img1"
         android:layout_width="250dp"
         android:layout_height="200dp"
         android:layout_marginTop="35dp"
         android:contentDescription="תמונה ראשית"
         android:scaleType="centerCrop"
-        android:src="@drawable/img"
+        android:src="@drawable/img1"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <ImageView
+        android:id="@+id/btn_img2"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="תמונה ראשית"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img2"
         app:layout_constraintTop_toBottomOf="@id/tvUserName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -43,7 +71,7 @@
         android:text="@string/send_message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_img" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_img2" />
 
     <!-- 3. כפתור מעקב (במקום Switch) -->
     <Button
@@ -68,5 +96,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFollow"
         app:layout_constraintVertical_bias="0.756" />
+
+    <SeekBar
+        android:id="@+id/mySeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:scaleY="1.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFollow"
+        app:layout_constraintVertical_bias="0.554" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
